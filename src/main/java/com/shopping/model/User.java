@@ -17,24 +17,33 @@ import java.util.Date;
 @EntityListeners(value = {AuditingEntityListener.class})
 //사용자
 public class User {
+
     @Id
     private Long id;
 
+    //아이디
     private String userId;
 
+    //비밀번호
     private String password;
 
+    //주소
     private String address;
 
+    //성별
     private Gender gender;
 
+    //성명
     private String name;
 
+    //생년월일
     private Date birthDate;
 
     @CreatedDate
+    //회원가입날짜
     private Date created;
 
+    //포인트
     private int point;
 
     //lombok geter, setter 소스 코드 내부적으로 생성
